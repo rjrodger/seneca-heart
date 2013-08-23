@@ -1,0 +1,23 @@
+{
+  "name": "seneca-heart",
+  "version": "0.0.1",
+  "description": "seneca-heart ============",
+  "main": "heart.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rjrodger/seneca-heart.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "c7f12c602777708721214c4715e6957eed095cd8",
+  "devDependencies": {
+    "seneca": "~0.5.10"
+  },
+  "dependencies": {
+    "underscore": "~1.5.1"
+  }
+}
