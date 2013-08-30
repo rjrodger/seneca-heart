@@ -14,7 +14,7 @@ sleep 1
 curl "http://localhost:10101/act?role=heart&cmd=add-node&id=12000&port=12000"
 curl "http://localhost:10101/act?role=heart&cmd=add-node&id=12001&port=12001"
 curl "http://localhost:10101/act?role=heart&cmd=add-node&id=12002&port=12002"
-
+   
 
 
 

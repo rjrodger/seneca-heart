@@ -13,11 +13,15 @@
   "author": "",
   "license": "MIT",
   "readmeFilename": "README.md",
-  "gitHead": "c7f12c602777708721214c4715e6957eed095cd8",
   "devDependencies": {
     "seneca": "~0.5.10"
   },
   "dependencies": {
     "underscore": "~1.5.1"
-  }
+  },
+  "files": [
+    "heart.js",
+    "README.md",
+    "LICENSE"
+  ]
 }
