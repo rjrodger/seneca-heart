@@ -17,7 +17,8 @@
     "seneca": "~0.5.10"
   },
   "dependencies": {
-    "underscore": "~1.5.1"
+    "underscore": "~1.5.1",
+    "node-uuid": "~1.4.1"
   },
   "files": [
     "heart.js",
