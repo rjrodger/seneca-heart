@@ -1,6 +1,6 @@
 {
   "name": "seneca-heart",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "seneca-heart ============",
   "main": "heart.js",
   "scripts": {
@@ -14,11 +14,11 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "devDependencies": {
-    "seneca": "~0.5.10"
+    "seneca": "~0.5.17"
   },
   "dependencies": {
-    "underscore": "~1.5.1",
-    "node-uuid": "~1.4.1"
+    "nid": "~0.3.2",
+    "underscore": "~1.6.0"
   },
   "files": [
     "heart.js",

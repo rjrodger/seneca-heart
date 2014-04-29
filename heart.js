@@ -3,7 +3,7 @@
 
 
 var _     = require('underscore')
-var uuid  = require('node-uuid')
+var nid   = require('nid')
 
 
 
@@ -14,7 +14,7 @@ module.exports = function( options ) {
 
 
   options = seneca.util.deepextend({
-    id: uuid(),
+    id: nid(),
     monitor:false,
 
     minwait:1111,
@@ -29,18 +29,15 @@ module.exports = function( options ) {
 
   // actions provided
   seneca.add( {role:name, cmd:'send-ping'},     
-              {node:'required$'}, 
               send_ping )
 
   seneca.add( {role:name, cmd:'answer-ping'},    
               answer_ping )
 
   seneca.add( {role:name, cmd:'add-node'},    
-              {id:'required$,string$'}, 
               add_node )
 
   seneca.add( {role:name, cmd:'remove-node'},    
-              {id:'required$,string$'}, 
               remove_node )
 
   seneca.add( {role:name, cmd:'select'},    
@@ -253,8 +250,10 @@ module.exports = function( options ) {
         })
       })
 
+      done();
       nextping()
     }
+    else return done();
   })
 
 

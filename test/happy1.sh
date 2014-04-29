@@ -7,13 +7,18 @@ node echo.js 12002 --seneca.log=plugin:heart > echo-2.log &
 sleep 1
 
 node main.js --seneca.log=plugin:heart > main.log &
-#node main.js --seneca.log.all > main.log &
 
 sleep 1
 
 curl "http://localhost:10101/act?role=heart&cmd=add-node&id=12000&port=12000"
+echo
 curl "http://localhost:10101/act?role=heart&cmd=add-node&id=12001&port=12001"
+echo
 curl "http://localhost:10101/act?role=heart&cmd=add-node&id=12002&port=12002"
+echo
+
+killall node
+
    
 
 
